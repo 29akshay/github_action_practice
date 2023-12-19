@@ -9,13 +9,16 @@ jobs:
         - name: checkout repo
           uses: actions/checkout@v4
 
-        - name: welcome massage
-          run: echo "my first github action"
+        - name: list and read file
+          run: |
+           echo "my first github action"
+           ls -ltra
+           cat README.md
 
-        - name: list file
-          run: ls -ltr
+        # - name: list file
+        #   run: ls -ltr
 
-        - name: read file
-          run: cat README.md
+        # - name: read file
+        #   run: cat README.md
           
             
