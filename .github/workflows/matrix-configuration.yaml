@@ -9,7 +9,7 @@ jobs:
         matrix:
           os: [ubuntu-latest, ubuntu-20.04, window-latest]
           image: [hello-world, apline]
-      runs-on: ${{ matrix }}
+      runs-on: ${{ matrix.os }}
       steps:
       - name: echo docker details
         run: docker info
